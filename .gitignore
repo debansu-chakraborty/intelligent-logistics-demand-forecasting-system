@@ -1,0 +1,31 @@
+# Virtual Environments
+.venv/
+env/
+venv/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment Variables & Secrets
+.env
+*.env.local
+
+# ML Models & Datasets (Prevent uploading heavy binaries)
+*.pkl
+*.onnx
+*.joblib
+data/raw/*
+!data/raw/.gitkeep
+
+# IDE Settings
+.vscode/
+.idea/
+.DS_Store
+
+# Node modules (Frontend)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
