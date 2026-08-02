@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.api.forecast import router as forecast_router
 from app.api.inventory import router as inventory_router
 from app.api.simulate import router as simulate_router
+from app.api.warehouse import router as warehouse_router
 
 from app.database.database import engine
 from app.database.models import Base
@@ -18,6 +19,7 @@ Base.metadata.create_all(bind=engine)
 app.include_router(forecast_router)
 app.include_router(inventory_router)
 app.include_router(simulate_router)
+app.include_router(warehouse_router)
 
 
 @app.get("/")
