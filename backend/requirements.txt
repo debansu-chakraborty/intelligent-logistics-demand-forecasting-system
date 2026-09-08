@@ -1,0 +1,18 @@
+# Web Framework & Server
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Database Connectivity & ORM
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.6
+asyncpg>=0.28.0
+
+# Optimization & Rebalancing Engine (Member 3)
+pulp>=2.7.0
+scipy>=1.10.0
+
+# Utilities & HTTP Client
+requests>=2.31.0
+httpx>=0.24.0
